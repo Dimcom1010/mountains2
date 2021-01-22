@@ -1,0 +1,560 @@
+@charset
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+      
+}
+
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+* a{
+    text-decoration: none;
+}
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+/*                            Конец обнуления*/
+/*  шрифты
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+h1 {
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+        line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+h1 a{
+    color: #01a2a6;
+}
+
+h2 {
+    color: #29d9c2;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0 0 70px 0;
+}
+h2 a{
+    color: #01a2a6;
+}
+h3 {
+    color: #29d9c2;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+h4 {
+    color: #777777;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+h4 a{
+    color: #aeaeae;
+    font-weight: 500;
+}
+body {
+    color: #777777;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    background:   linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%,rgba(0, 0, 0, 0) 4%, rgba(0, 0, 0, 0) 100%), url(../img/BackGround_01.jpg) no-repeat center top/100%;
+/*    background: ;*/
+    min-width: 1230px;
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+}
+.content {
+   flex: 1 1 auto;
+    min-width: 1230px;
+}
+
+.container {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1230px;
+    
+    
+    
+}
+
+.head__inner {
+    padding: 35px 0 90px 0;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0 388px 0 0;
+}
+
+
+
+.menu__nav{
+
+
+     border: 4px solid rgba(255,255,255,0); 
+     border-radius: 35px; 
+     padding: 20px;
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: 500;
+
+
+
+
+
+  }
+.menu__nav:hover{
+    border: 4px solid rgba(255,255,255,1);
+    
+}
+
+.header{
+
+}
+
+.foto_menu {
+    height: 44px;
+    width: 44px;
+    border: 0px solid rgba(255,255,255,0); 
+    border-radius: 50%;
+    background:  url(../img/roza.jpg) no-repeat center top /cover;
+  }
+
+.foto_menu:after{
+    content: "\1F893";
+    font-size: 35px;
+    color: #fff;
+    transform: translateX(42px) translateY(8px) scaleX(0.5);
+    
+    
+}
+
+.menu_header {
+    width:  510px;
+    right: 0;
+}
+
+.menu_center {
+    display: block;
+    text-align: center;
+   
+   
+}
+
+.menu_center_p {
+
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 35px;
+    text-align: center;
+
+
+
+    
+}
+
+
+
+.yellow_botton {
+    display: inline-block;
+    padding: 30px 35px;
+    background: #ffffa6;
+    border-radius: 45px; 
+    color: #000;
+    margin: 50px 0 246px 0;
+     
+}
+.yellow_botton:hover {
+    background: #fff;
+    color: #01a2a6;
+}
+
+.about__inner {
+    margin: -45px 0 0 0 ;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    z-index: 2;
+}
+
+.about_left {
+    width: 50%;
+    height: 500px;
+    display: block;
+    
+    background:  url(../img/kitai.jpg) no-repeat center center/  450px auto;
+    
+    
+    
+}
+
+.about_right {
+    width: 50%;
+    margin: auto 60px auto 0
+}
+
+.destination {
+    background: #f2fefe;
+}
+
+.destination__head_h {
+    color: #29d9c2;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 70px 0 70px 0;
+    display: block;
+}
+
+.destination__head {
+    display: flex;
+     align-items: center;
+    justify-content: space-between; 
+    
+    margin: 0 auto;
+    max-width: 970px;
+    
+}
+
+
+
+
+.destination_poisk {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.poisk {
+    display: inline-block;
+    height: 37px;
+    width: 240px;
+     background:  url(../img/POISK.JPG) no-repeat top /  100%;
+    
+}
+
+.text_right_poisk {
+    display: inline-block;
+    
+}
+
+
+.box_img {
+    width: 1200px;
+    height: 515px;
+    overflow: hidden;
+    position: relative;
+    background: url(../img/foto_3.jpg) no-repeat top /  100%;
+    
+
+}
+.box_img img{
+    height: 515px;
+    
+}
+.dws-wrappor {
+    
+    margin: 32px 0 0 0;
+}
+
+.text_animation{
+    padding:   0 70px  0 30px;
+    width: 370px; 
+    height: 515px;
+    background: #fff;
+    
+}
+
+
+
+.text_animation img{
+    height: 90px;
+}
+.container_animation {
+    
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    opacity: 0.9;
+    transition: .5s ease-in-out;
+    transform: translateX(472px); 
+}
+
+.container_animation:before,:after{
+    content: "";
+    position: absolute;
+}
+.container_animation:before{
+    content: "\23F4";
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    
+     transform: translateY(240px) translateX(-20px);
+}
+.container_animation:after{
+    content: "see more \279C";
+    text-shadow: 5px 5px 30px black,5px 5px 30px black, 5px 5px 40px black ;
+    
+    color: #fff;
+    padding: 20px 0 0 40px;
+    font-weight: 700;
+    width: 100px;
+    height: 31px;
+    transform: translateY(-50px) translateX(-140px);
+    
+}
+.foto_karusel {
+    margin: 0 0 20px;
+}
+
+.h_karusel {
+    margin: 0px 0 0 0;
+    font-size: 30px;
+}
+
+.box_img:hover .container_animation{
+   transform: translateX(0px);  
+}
+
+
+
+.dve_foto {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    
+}
+
+.left_foto {
+    width: 470px;
+    height: 360px;
+    background: url(../img/foto_1.jpg) no-repeat top /  100%;
+}
+
+.right_foto {
+    width: 670px;
+    height: 360px;
+    background: url(../img/gori.jpg) no-repeat top /  100%;
+}
+.right_foto1 {
+    position: relative;
+    width: 670px;
+    height: 360px;
+    background: url(../img/gori.jpg) no-repeat top /  100%;
+    overflow: hidden
+}
+
+.text_animation_buttom_left {
+    padding:   0 35px  ;
+    width: 333px; 
+    height: 360px;
+    background: #fff;
+    opacity: 0.95;
+    transition: .5s ease-in-out;
+    transform: translateX(-400px)
+}
+
+.text_animation_buttom_left:before{
+    content: "\23F4";
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    font-weight: 700;
+    transform: translateX(353px) translateY(165px) rotate(180deg);
+    
+    
+}
+
+.right_foto1:hover .text_animation_buttom_left{
+    transform: translateX(0px); 
+}
+
+.foto_gorka {
+    margin: 0 0 20px;
+    padding: 44px 0 0 0;
+}
+
+.left_foto:after{
+    content: "";
+    width: 150px;
+    height: 150px;
+    background: url(../img/palma.jpg) no-repeat top /  100%;
+    border-radius: 50%;
+    transform: translateX(160px) translateY(105px);
+    
+}
+
+
+
+.footer {
+    border-color: red;    
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/montein_footer.jpg) ;
+    background-repeat: repeat-x;
+}
+
+.footer_text_buttom {
+    display: flex;
+    
+    justify-content: center;
+    margin: 0  0 16px 0;
+    
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100%;
+}
+
+.footer_row {
+    
+    height: 276px;
+    
+}
+
+.footer_text_top {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    margin: 20px 0 0 0;
+}
+
+.list_footer {
+    display: flex;
+    
+}
+.link_footer{
+    margin: 0 16px 0 0; 
+    color: #fff;
+    transition: .5s;
+}
+.link_footer:before{
+    content: "\2022";
+    margin: 0 10px 0 0
+}
+
+.link_footer:hover{
+    color: #ffffa6;
+}
+
+.link_footer:first-child:before{
+    content: "";
+    margin: 0 10px 0 0
+}
+
+
+.cont_icons {
+    display: flex;
+    }
+.cont_icons a{
+    margin: 0  0 0 26px;
+}
+
+
+.icon1 {
+    height: 28px;
+    width: 28px;
+    border: 4px solid rgba(255,255,255,0); 
+    border-radius: 35px;
+    background:  url(../img/buttom1.jpg) no-repeat center top ;
+    transition: .5s;
+}
+
+.icon2 {
+    height: 28px;
+    width: 28px;
+    border: 4px solid rgba(255,255,255,0); 
+    border-radius: 35px;
+    background:  url(../img/buttom2.jpg) no-repeat center top ;
+    transition: .5s
+}
+
+.icon3 {
+    height: 28px;
+    width: 28px;
+    border: 4px solid rgba(255,255,255,0); 
+    border-radius: 35px;
+    background:  url(../img/buttom3.jpg) no-repeat center top ;
+    transition: .5s
+}
+.icon1:hover{
+    background:  url(../img/buttom1_activ.jpg) no-repeat center top ;
+}
+.icon2:hover{
+    background:  url(../img/buttom2_activ.jpg) no-repeat center top ;
+}
+.icon3:hover{
+    background:  url(../img/buttom3_activ.jpg) no-repeat center top ;
+}
+.link_menu {
+    
+    display: flex;
+    justify-content: space-between;
+}
